@@ -37,7 +37,7 @@
   "dependencies": {
     "@graphql-toolkit/core": "^0.10.6",
     "@graphql-toolkit/graphql-file-loader": "^0.10.6",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "delay": "^4.3.0",
     "graphql": "^14.0.0"
   },
