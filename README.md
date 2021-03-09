@@ -4,13 +4,13 @@ Optionally include the introspection query by passing `true` as the fourth argum
 
 ## Run with [npx](https://nodejs.dev/the-npx-nodejs-package-runner)
 ```
-npx hasura-allow-operations-in my-admin-secret '**/*.graphql' http://localhost:8090 true
+npx hasura-allow-operations-in http://localhost:8090 my-admin-secret '**/*.graphql' true
 ```
 
 ## Global install from [npm](https://www.npmjs.com/package/hasura-allow-operations-in)
 ```
 npm i -g hasura-allow-operations-in
-hasura-allow-operations-in my-admin-secret http://localhost:8090 '**/*.graphql' true
+hasura-allow-operations-in http://localhost:8090 my-admin-secret '**/*.graphql' true
 
 ## cleanup
 npm uninstall -g hasura-allow-operations-in
