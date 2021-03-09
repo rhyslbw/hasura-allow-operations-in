@@ -6,12 +6,16 @@ const adminSecret = process.argv[3]
 const sourcePath = process.argv[4];
 const allowIntrospection = process.argv[5] === 'true';
 
-if (sourcePath === undefined) {
-  throw new Error('Source path must be passed as first argument');
+if (hasuraUri === undefined) {
+  throw new Error('Hasura URI must be passed as first argument');
 }
 
-if (hasuraUri === undefined) {
-  throw new Error('Hasura URI must be passed as the second argument');
+if (adminSecret === undefined) {
+  throw new Error('Admin secret must be passed as the second argument');
+}
+
+if (sourcePath === undefined) {
+  throw new Error('Source path must be passed as third argument');
 }
 
 run(hasuraUri, adminSecret, sourcePath, allowIntrospection)
